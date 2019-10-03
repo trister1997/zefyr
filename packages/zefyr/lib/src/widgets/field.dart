@@ -19,6 +19,7 @@ class ZefyrField extends StatefulWidget {
   final ZefyrToolbarDelegate toolbarDelegate;
   final ZefyrImageDelegate imageDelegate;
   final ScrollPhysics physics;
+  final void validator;
 
   const ZefyrField({
     Key key,
@@ -31,6 +32,7 @@ class ZefyrField extends StatefulWidget {
     this.toolbarDelegate,
     this.imageDelegate,
     this.physics,
+    this.validator,
   }) : super(key: key);
 
   @override
